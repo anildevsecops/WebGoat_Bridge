@@ -8,8 +8,8 @@ pipeline {
         REPO_NAME = "${env.GIT_URL.tokenize('/.')[-2]}"
         //BRIDGECLI_LINUX64 = 'https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-bridge/latest/synopsys-bridge-linux64.zip'
         //BRIDGE_POLARIS_SERVERURL = 'https://poc.polaris.synopsys.com'
-        BRIDGE_POLARIS_APPLICATION_NAME = "gonz_test-${env.REPO_NAME}"
-        BRIDGE_POLARIS_PROJECT_NAME = "gonz_test-${env.REPO_NAME}"
+        BRIDGE_POLARIS_APPLICATION_NAME = "test"
+        BRIDGE_POLARIS_PROJECT_NAME = "test"
         BRIDGE_POLARIS_ASSESSMENT_TYPES = 'SAST,SCA'
     }
    stages {
